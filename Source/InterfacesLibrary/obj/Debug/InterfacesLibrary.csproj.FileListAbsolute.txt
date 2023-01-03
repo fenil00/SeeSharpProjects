@@ -1,0 +1,6 @@
+D:\C#Practises\SeeSharpProjects\InterfacesLibrary\bin\Debug\InterfacesLibrary.dll
+D:\C#Practises\SeeSharpProjects\InterfacesLibrary\bin\Debug\InterfacesLibrary.pdb
+D:\C#Practises\SeeSharpProjects\InterfacesLibrary\obj\Debug\InterfacesLibrary.csproj.AssemblyReference.cache
+D:\C#Practises\SeeSharpProjects\InterfacesLibrary\obj\Debug\InterfacesLibrary.csproj.CoreCompileInputs.cache
+D:\C#Practises\SeeSharpProjects\InterfacesLibrary\obj\Debug\InterfacesLibrary.dll
+D:\C#Practises\SeeSharpProjects\InterfacesLibrary\obj\Debug\InterfacesLibrary.pdb

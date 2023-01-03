@@ -1,0 +1,10 @@
+D:\C#Practises\SeeSharpProjects\OPCDemoUI\bin\Debug\OPCDemoUI.exe.config
+D:\C#Practises\SeeSharpProjects\OPCDemoUI\bin\Debug\OPCDemoUI.exe
+D:\C#Practises\SeeSharpProjects\OPCDemoUI\bin\Debug\OPCDemoUI.pdb
+D:\C#Practises\SeeSharpProjects\OPCDemoUI\bin\Debug\OPCLibrary.dll
+D:\C#Practises\SeeSharpProjects\OPCDemoUI\bin\Debug\OPCLibrary.pdb
+D:\C#Practises\SeeSharpProjects\OPCDemoUI\obj\Debug\OPCDemoUI.csproj.AssemblyReference.cache
+D:\C#Practises\SeeSharpProjects\OPCDemoUI\obj\Debug\OPCDemoUI.csproj.CoreCompileInputs.cache
+D:\C#Practises\SeeSharpProjects\OPCDemoUI\obj\Debug\OPCDemoUI.csproj.CopyComplete
+D:\C#Practises\SeeSharpProjects\OPCDemoUI\obj\Debug\OPCDemoUI.exe
+D:\C#Practises\SeeSharpProjects\OPCDemoUI\obj\Debug\OPCDemoUI.pdb

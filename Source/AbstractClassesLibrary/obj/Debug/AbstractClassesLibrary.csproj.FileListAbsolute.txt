@@ -1,0 +1,6 @@
+D:\C#Practises\SeeSharpProjects\AbstractClassesLibrary\bin\Debug\AbstractClassesLibrary.dll
+D:\C#Practises\SeeSharpProjects\AbstractClassesLibrary\bin\Debug\AbstractClassesLibrary.pdb
+D:\C#Practises\SeeSharpProjects\AbstractClassesLibrary\obj\Debug\AbstractClassesLibrary.csproj.AssemblyReference.cache
+D:\C#Practises\SeeSharpProjects\AbstractClassesLibrary\obj\Debug\AbstractClassesLibrary.csproj.CoreCompileInputs.cache
+D:\C#Practises\SeeSharpProjects\AbstractClassesLibrary\obj\Debug\AbstractClassesLibrary.dll
+D:\C#Practises\SeeSharpProjects\AbstractClassesLibrary\obj\Debug\AbstractClassesLibrary.pdb

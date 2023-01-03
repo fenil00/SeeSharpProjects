@@ -1,0 +1,6 @@
+D:\C#Practises\SeeSharpProjects\OPCLibrary\bin\Debug\OPCLibrary.dll
+D:\C#Practises\SeeSharpProjects\OPCLibrary\bin\Debug\OPCLibrary.pdb
+D:\C#Practises\SeeSharpProjects\OPCLibrary\obj\Debug\OPCLibrary.csproj.AssemblyReference.cache
+D:\C#Practises\SeeSharpProjects\OPCLibrary\obj\Debug\OPCLibrary.csproj.CoreCompileInputs.cache
+D:\C#Practises\SeeSharpProjects\OPCLibrary\obj\Debug\OPCLibrary.dll
+D:\C#Practises\SeeSharpProjects\OPCLibrary\obj\Debug\OPCLibrary.pdb

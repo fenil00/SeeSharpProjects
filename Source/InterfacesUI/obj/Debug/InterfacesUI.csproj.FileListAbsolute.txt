@@ -1,0 +1,10 @@
+D:\C#Practises\SeeSharpProjects\InterfacesUI\bin\Debug\InterfacesUI.exe.config
+D:\C#Practises\SeeSharpProjects\InterfacesUI\bin\Debug\InterfacesUI.exe
+D:\C#Practises\SeeSharpProjects\InterfacesUI\bin\Debug\InterfacesUI.pdb
+D:\C#Practises\SeeSharpProjects\InterfacesUI\bin\Debug\InterfacesLibrary.dll
+D:\C#Practises\SeeSharpProjects\InterfacesUI\bin\Debug\InterfacesLibrary.pdb
+D:\C#Practises\SeeSharpProjects\InterfacesUI\obj\Debug\InterfacesUI.csproj.AssemblyReference.cache
+D:\C#Practises\SeeSharpProjects\InterfacesUI\obj\Debug\InterfacesUI.csproj.CoreCompileInputs.cache
+D:\C#Practises\SeeSharpProjects\InterfacesUI\obj\Debug\InterfacesUI.csproj.CopyComplete
+D:\C#Practises\SeeSharpProjects\InterfacesUI\obj\Debug\InterfacesUI.exe
+D:\C#Practises\SeeSharpProjects\InterfacesUI\obj\Debug\InterfacesUI.pdb

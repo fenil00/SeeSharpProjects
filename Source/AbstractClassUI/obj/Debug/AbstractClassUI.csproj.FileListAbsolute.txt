@@ -1,0 +1,10 @@
+D:\C#Practises\SeeSharpProjects\AbstractClassUI\bin\Debug\AbstractClassUI.exe.config
+D:\C#Practises\SeeSharpProjects\AbstractClassUI\bin\Debug\AbstractClassUI.exe
+D:\C#Practises\SeeSharpProjects\AbstractClassUI\bin\Debug\AbstractClassUI.pdb
+D:\C#Practises\SeeSharpProjects\AbstractClassUI\bin\Debug\AbstractClassesLibrary.dll
+D:\C#Practises\SeeSharpProjects\AbstractClassUI\bin\Debug\AbstractClassesLibrary.pdb
+D:\C#Practises\SeeSharpProjects\AbstractClassUI\obj\Debug\AbstractClassUI.csproj.AssemblyReference.cache
+D:\C#Practises\SeeSharpProjects\AbstractClassUI\obj\Debug\AbstractClassUI.csproj.CoreCompileInputs.cache
+D:\C#Practises\SeeSharpProjects\AbstractClassUI\obj\Debug\AbstractClassUI.csproj.CopyComplete
+D:\C#Practises\SeeSharpProjects\AbstractClassUI\obj\Debug\AbstractClassUI.exe
+D:\C#Practises\SeeSharpProjects\AbstractClassUI\obj\Debug\AbstractClassUI.pdb

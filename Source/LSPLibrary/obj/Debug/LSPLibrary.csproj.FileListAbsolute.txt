@@ -1,0 +1,6 @@
+D:\C#Practises\SeeSharpProjects\LSPLibrary\bin\Debug\LSPLibrary.dll
+D:\C#Practises\SeeSharpProjects\LSPLibrary\bin\Debug\LSPLibrary.pdb
+D:\C#Practises\SeeSharpProjects\LSPLibrary\obj\Debug\LSPLibrary.csproj.CoreCompileInputs.cache
+D:\C#Practises\SeeSharpProjects\LSPLibrary\obj\Debug\LSPLibrary.dll
+D:\C#Practises\SeeSharpProjects\LSPLibrary\obj\Debug\LSPLibrary.pdb
+D:\C#Practises\SeeSharpProjects\LSPLibrary\obj\Debug\LSPLibrary.csproj.AssemblyReference.cache
