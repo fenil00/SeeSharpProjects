@@ -1,7 +1,0 @@
-D:\C#Practises\SeeSharpProjects\SRPDemo\bin\Debug\SRPDemo.exe.config
-D:\C#Practises\SeeSharpProjects\SRPDemo\bin\Debug\SRPDemo.exe
-D:\C#Practises\SeeSharpProjects\SRPDemo\bin\Debug\SRPDemo.pdb
-D:\C#Practises\SeeSharpProjects\SRPDemo\obj\Debug\SRPDemo.csproj.AssemblyReference.cache
-D:\C#Practises\SeeSharpProjects\SRPDemo\obj\Debug\SRPDemo.csproj.CoreCompileInputs.cache
-D:\C#Practises\SeeSharpProjects\SRPDemo\obj\Debug\SRPDemo.exe
-D:\C#Practises\SeeSharpProjects\SRPDemo\obj\Debug\SRPDemo.pdb
