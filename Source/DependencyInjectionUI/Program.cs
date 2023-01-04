@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace DependencyInjectionUI
 {
+    using Autofac;
+
     using DependencyInjectionLibrary;
 
     class Program
@@ -14,9 +16,25 @@ namespace DependencyInjectionUI
         {
             Console.ForegroundColor = ConsoleColor.Green;
 
-            BussinessLogic bussinessLogic = new BussinessLogic();
+            //Dependency Inversion 
+            //Top level Object is going to control all the dependencies.
 
-            bussinessLogic.ProcessData();
+            // BussinessLogic bussinessLogic = new BussinessLogic();
+            // bussinessLogic.ProcessData();
+
+            var container = ContainerConfig.Configure();
+
+            // new scope for instances being passed out. 
+            using (var scope = container.BeginLifetimeScope())
+            {
+                var app = scope.Resolve<IApplication>();
+
+                // It will give instance of "Application" but Application requires "IBussinessLogic"
+                // then get instance of "BussinessLogic" -> but it requires "ILogger" and "IDataAccess" -> 
+                // then get instance of "Logger" and "DataAccess"
+
+                app.Run();
+            }
 
             Console.ReadLine();
         }
