@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace DependencyInjectionLibrary.Utilities
 {
-    public class Logger
+    public class Logger : ILogger
     {
+        public void Log(string message)
+        {
+            Console.WriteLine($"Write to Console: {message}");
+        }
     }
 }

@@ -42,8 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BussinessLogic.cs" />
+    <Compile Include="IBussinessLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\DataAccess.cs" />
+    <Compile Include="Utilities\IDataAccess.cs" />
+    <Compile Include="Utilities\ILogger.cs" />
     <Compile Include="Utilities\Logger.cs" />
   </ItemGroup>
   <ItemGroup />
