@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegatesConsoleUI", "Deleg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegatesLibrary", "DelegatesLibrary\DelegatesLibrary.csproj", "{79509DF4-871B-4BBE-A4B3-0F756DC07B52}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegatesWinFormUI", "DelegatesWinFormUI\DelegatesWinFormUI.csproj", "{45F217F8-B357-4512-8C41-36DB441894DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{79509DF4-871B-4BBE-A4B3-0F756DC07B52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79509DF4-871B-4BBE-A4B3-0F756DC07B52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79509DF4-871B-4BBE-A4B3-0F756DC07B52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45F217F8-B357-4512-8C41-36DB441894DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45F217F8-B357-4512-8C41-36DB441894DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45F217F8-B357-4512-8C41-36DB441894DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45F217F8-B357-4512-8C41-36DB441894DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
