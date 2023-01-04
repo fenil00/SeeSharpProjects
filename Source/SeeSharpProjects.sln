@@ -31,6 +31,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIDemoUI", "DIDemoUI\DIDemo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DILibrary", "DILibrary\DILibrary.csproj", "{59C452C1-2387-42CE-BA98-42F86801A667}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjectionUI", "DependencyInjectionUI\DependencyInjectionUI.csproj", "{269EB2C3-7993-42E1-97AB-2C1E1A4B3EF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjectionLibrary", "DependencyInjectionLibrary\DependencyInjectionLibrary.csproj", "{C7ED85F3-FBBA-4D20-8A7C-D8995E1AD167}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +97,14 @@ Global
 		{59C452C1-2387-42CE-BA98-42F86801A667}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59C452C1-2387-42CE-BA98-42F86801A667}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59C452C1-2387-42CE-BA98-42F86801A667}.Release|Any CPU.Build.0 = Release|Any CPU
+		{269EB2C3-7993-42E1-97AB-2C1E1A4B3EF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{269EB2C3-7993-42E1-97AB-2C1E1A4B3EF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{269EB2C3-7993-42E1-97AB-2C1E1A4B3EF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{269EB2C3-7993-42E1-97AB-2C1E1A4B3EF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7ED85F3-FBBA-4D20-8A7C-D8995E1AD167}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7ED85F3-FBBA-4D20-8A7C-D8995E1AD167}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7ED85F3-FBBA-4D20-8A7C-D8995E1AD167}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7ED85F3-FBBA-4D20-8A7C-D8995E1AD167}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
