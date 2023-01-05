@@ -35,6 +35,7 @@ namespace EventsWinFormUI
             this.customerText = new System.Windows.Forms.Label();
             this.customerLabel = new System.Windows.Forms.Label();
             this.headerLabel = new System.Windows.Forms.Label();
+            this.errorMessage = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.amountValue)).BeginInit();
             this.SuspendLayout();
             // 
@@ -99,11 +100,24 @@ namespace EventsWinFormUI
             this.headerLabel.TabIndex = 9;
             this.headerLabel.Text = "Credit Card Machine";
             // 
+            // errorMessage
+            // 
+            this.errorMessage.AutoSize = true;
+            this.errorMessage.ForeColor = System.Drawing.Color.Red;
+            this.errorMessage.Location = new System.Drawing.Point(88, 333);
+            this.errorMessage.Name = "errorMessage";
+            this.errorMessage.Size = new System.Drawing.Size(237, 13);
+            this.errorMessage.TabIndex = 26;
+            this.errorMessage.Text = "You had an overdraft protection transfer of $0.00";
+            this.errorMessage.Visible = false;
+            this.errorMessage.Click += new System.EventHandler(this.errorMessage_Click);
+            // 
             // Transactions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(427, 355);
+            this.Controls.Add(this.errorMessage);
             this.Controls.Add(this.makePurchaseButton);
             this.Controls.Add(this.amountValue);
             this.Controls.Add(this.amountLabel);
@@ -111,7 +125,7 @@ namespace EventsWinFormUI
             this.Controls.Add(this.customerLabel);
             this.Controls.Add(this.headerLabel);
             this.Name = "Transactions";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Transactions";
             ((System.ComponentModel.ISupportInitialize)(this.amountValue)).EndInit();
             this.ResumeLayout(false);
@@ -127,5 +141,6 @@ namespace EventsWinFormUI
         private System.Windows.Forms.Label customerText;
         private System.Windows.Forms.Label customerLabel;
         private System.Windows.Forms.Label headerLabel;
+        private System.Windows.Forms.Label errorMessage;
     }
 }
