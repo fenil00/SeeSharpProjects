@@ -10,7 +10,7 @@ namespace EventsLibrary
     {
         public event EventHandler<string> TransactionApprovedEvent;
 
-        public event EventHandler<decimal> OverdraftEvent;
+        public event EventHandler<OverdraftEventArgs> OverdraftEvent;
 
 
         public string AccountName { get; set; }
@@ -56,6 +56,15 @@ namespace EventsLibrary
                         // We have enough backup funds so transfar the amount to this account
                         // and then complete the transaction.
                         decimal amountNeeded = amount - Balance;
+
+                        OverdraftEventArgs args = new OverdraftEventArgs(amountNeeded, paymentName);
+                        OverdraftEvent?.Invoke(this, args);
+
+                        if (args.CancelTransaction == true)
+                        {
+                            return false;
+                        }
+
                         bool overdraftSucceeded = backupAccount.MakePayment("Overdraft Protection", amountNeeded);
 
                         // This should always be true but we will check anyway
@@ -70,7 +79,7 @@ namespace EventsLibrary
                         _transactions.Add($"Withdrew { string.Format("{0:C2}", amount) } for { paymentName }");
                         Balance -= amount;
                         this.TransactionApprovedEvent?.Invoke(this, paymentName);
-                        OverdraftEvent?.Invoke(this, amountNeeded);
+                       
                         return true;
                     }
                     else

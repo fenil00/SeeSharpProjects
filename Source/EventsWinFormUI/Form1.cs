@@ -42,9 +42,10 @@ namespace EventsWinFormUI
             this.customer.CheckingAccount.OverdraftEvent += CheckingAccount_OverdraftEvent;
         }
 
-        private void CheckingAccount_OverdraftEvent(object sender, decimal e)
+        private void CheckingAccount_OverdraftEvent(object sender, OverdraftEventArgs e)
         {
-            this.errorMessage.Text = $"You had an overdraft protection transfer of {string.Format("{0:C2}", e)}";
+          e.CancelTransaction = this.denyOverdraft.Checked;
+            this.errorMessage.Text = $"You had an overdraft protection transfer of {string.Format("{0:C2}", e.AmountOverfrafted)}";
             errorMessage.Visible = true;
         }
 

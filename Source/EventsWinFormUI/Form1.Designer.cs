@@ -42,6 +42,7 @@ namespace EventsWinFormUI
             this.customerText = new System.Windows.Forms.Label();
             this.customerLabel = new System.Windows.Forms.Label();
             this.headerLabel = new System.Windows.Forms.Label();
+            this.denyOverdraft = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // errorMessage
@@ -173,11 +174,22 @@ namespace EventsWinFormUI
             this.headerLabel.TabIndex = 13;
             this.headerLabel.Text = "Banking Demo";
             // 
+            // denyOverdraft
+            // 
+            this.denyOverdraft.AutoSize = true;
+            this.denyOverdraft.Location = new System.Drawing.Point(149, 347);
+            this.denyOverdraft.Name = "denyOverdraft";
+            this.denyOverdraft.Size = new System.Drawing.Size(100, 17);
+            this.denyOverdraft.TabIndex = 26;
+            this.denyOverdraft.Text = "Stop Overdrafts";
+            this.denyOverdraft.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1146, 555);
+            this.Controls.Add(this.denyOverdraft);
             this.Controls.Add(this.errorMessage);
             this.Controls.Add(this.recordTransactionsButton);
             this.Controls.Add(this.savingsTransactionsLabel);
@@ -213,6 +225,7 @@ namespace EventsWinFormUI
         private System.Windows.Forms.Label customerText;
         private System.Windows.Forms.Label customerLabel;
         private System.Windows.Forms.Label headerLabel;
+        private System.Windows.Forms.CheckBox denyOverdraft;
     }
 }
 
