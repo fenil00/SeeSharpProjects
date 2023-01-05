@@ -27,15 +27,32 @@ namespace EventsWinFormUI
 
         private void LoadTestingData()
         {
-            customer.CustomerName = "Tim Corey";
+            customer.CustomerName = "Fenil Desai";
             customer.CheckingAccount = new Account();
             customer.SavingsAccount = new Account();
 
-            customer.CheckingAccount.AccountName = "Tim's Checking Account";
-            customer.SavingsAccount.AccountName = "Tim's Savings Account";
+            customer.CheckingAccount.AccountName = "Fenil's Checking Account";
+            customer.SavingsAccount.AccountName = "Fenil's Savings Account";
 
             customer.CheckingAccount.AddDeposit("Initial Balance", 155.43M);
             customer.SavingsAccount.AddDeposit("Initial Balance", 98.45M);
+
+            this.customer.CheckingAccount.TransactionApprovedEvent += CheckingAccount_TransactionApprovedEvent;
+            this.customer.SavingsAccount.TransactionApprovedEvent += SavingsAccount_TransactionApprovedEvent; 
+        }
+
+        private void SavingsAccount_TransactionApprovedEvent(object sender, string e)
+        {
+            savingsTransactions.DataSource = null;
+            savingsTransactions.DataSource = customer.SavingsAccount.Transactions;
+            savingsBalanceValue.Text = string.Format("{0:C2}", customer.SavingsAccount.Balance);
+        }
+
+        private void CheckingAccount_TransactionApprovedEvent(object sender, string e)
+        {
+            checkingTransactions.DataSource = null;
+            checkingTransactions.DataSource = customer.CheckingAccount.Transactions;
+            checkingBalanceValue.Text = string.Format("{0:C2}", customer.CheckingAccount.Balance);
         }
 
         private void WireUpForm()
