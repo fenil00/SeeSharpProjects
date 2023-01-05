@@ -41,6 +41,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegatesLibrary", "Delegat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegatesWinFormUI", "DelegatesWinFormUI\DelegatesWinFormUI.csproj", "{45F217F8-B357-4512-8C41-36DB441894DB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsLibrary", "EventsLibrary\EventsLibrary.csproj", "{84FA9777-65C7-4D41-9E5C-231E15475054}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsWinFormUI", "EventsWinFormUI\EventsWinFormUI.csproj", "{F43AC517-B23D-4597-8050-5733D84D9912}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +127,14 @@ Global
 		{45F217F8-B357-4512-8C41-36DB441894DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45F217F8-B357-4512-8C41-36DB441894DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45F217F8-B357-4512-8C41-36DB441894DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84FA9777-65C7-4D41-9E5C-231E15475054}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84FA9777-65C7-4D41-9E5C-231E15475054}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84FA9777-65C7-4D41-9E5C-231E15475054}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84FA9777-65C7-4D41-9E5C-231E15475054}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F43AC517-B23D-4597-8050-5733D84D9912}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F43AC517-B23D-4597-8050-5733D84D9912}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F43AC517-B23D-4597-8050-5733D84D9912}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F43AC517-B23D-4597-8050-5733D84D9912}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
