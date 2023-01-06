@@ -24,7 +24,7 @@
         <Button x:Name="executeAsync" Grid.Row="3" Margin="10" Padding="10" Click="executeAsync_Click">Async Execute</Button>
         <Button x:Name="executeParallelAsync" Grid.Row="4" Margin="10" Padding="10" Click="executeParallelAsync_Click" >Parallel Async Execute</Button>
         <Button x:Name="cancelOperation" Grid.Row="5" Margin="10" Padding="10" Click="cancelOperation_Click" >Cancel Operation</Button>
-        <ProgressBar x:Name="WebsiteProgressBar"  Grid.Row="6"></ProgressBar>
+        <ProgressBar x:Name="dashboardProgress"  Grid.Row="6"  Margin="10" Padding="10" Height="30"></ProgressBar>
         <TextBlock x:Name="resultsWindow" Grid.Row="7" Margin="10"/>
     </Grid>
 </Window>
