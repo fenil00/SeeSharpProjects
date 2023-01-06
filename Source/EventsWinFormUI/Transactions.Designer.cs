@@ -127,6 +127,7 @@ namespace EventsWinFormUI
             this.Name = "Transactions";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Transactions";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Transactions_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.amountValue)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -41,5 +41,11 @@ namespace EventsWinFormUI
         {
             this.errorMessage.Visible = false;
         }
+
+        private void Transactions_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //De-register event listener
+            this._customer.CheckingAccount.OverdraftEvent -= CheckingAccount_OverdraftEvent;
+        }
     }
 }

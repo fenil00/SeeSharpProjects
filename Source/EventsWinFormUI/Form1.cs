@@ -82,5 +82,13 @@ namespace EventsWinFormUI
         {
             errorMessage.Visible = false;
         }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            // Deregister all Events listeners
+            this.customer.CheckingAccount.TransactionApprovedEvent -= CheckingAccount_TransactionApprovedEvent;
+            this.customer.SavingsAccount.TransactionApprovedEvent -= SavingsAccount_TransactionApprovedEvent;
+            this.customer.CheckingAccount.OverdraftEvent -= CheckingAccount_OverdraftEvent;
+        }
     }
 }
