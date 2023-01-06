@@ -31,7 +31,8 @@ namespace SimpleAsyncDemo
         {
             var watch = System.Diagnostics.Stopwatch.StartNew();
 
-            RunDownloadSync();
+            var results = DemoMethods.RunDownloadSync();
+            PrintResults(results);
 
             watch.Stop();
             var elapsedMs = watch.ElapsedMilliseconds;
@@ -43,8 +44,8 @@ namespace SimpleAsyncDemo
         {
             var watch = System.Diagnostics.Stopwatch.StartNew();
 
-            await RunDownloadParallelAsync();
-          // await this.RunDownloadAsync();
+            var results = await DemoMethods.RunDownloadAsync();
+            PrintResults(results);
 
             watch.Stop();
             var elapsedMs = watch.ElapsedMilliseconds;
@@ -52,87 +53,39 @@ namespace SimpleAsyncDemo
             resultsWindow.Text += $"Total execution time: { elapsedMs }";
         }
 
-        private List<string> PrepData()
+        private async void executeParallelAsync_Click(object sender, RoutedEventArgs e)
         {
-            List<string> output = new List<string>();
+            var watch = System.Diagnostics.Stopwatch.StartNew();
 
+            var results = await DemoMethods.RunDownloadParallelAsync();
+            PrintResults(results);
+
+            watch.Stop();
+            var elapsedMs = watch.ElapsedMilliseconds;
+
+            resultsWindow.Text += $"Total execution time: { elapsedMs }";
+        }
+
+        private void cancelOperation_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+      
+
+        private void PrintResults(List<WebsiteDataModel> results)
+        {
             resultsWindow.Text = "";
-
-            output.Add("https://www.yahoo.com");
-            output.Add("https://www.google.com");
-           // output.Add("https://www.microsoft.com/de-de/");
-            output.Add("https://www.cnn.com");
-            output.Add("https://www.codeproject.com");
-           //output.Add("https://www.stackoverflow.com");
-
-            return output;
-        }
-
-        private async Task RunDownloadAsync()
-        {
-            List<string> websites = PrepData();
-
-            foreach (string site in websites)
-            {
-                WebsiteDataModel results = await Task.Run(() => DownloadWebsite(site));
-                ReportWebsiteInfo(results);
-            }
-        }
-
-        private async Task RunDownloadParallelAsync()
-        {
-            List<string> websites = PrepData();
-            List<Task<WebsiteDataModel>> tasks = new List<Task<WebsiteDataModel>>();
-
-            foreach (string site in websites)
-            {
-                tasks.Add(DownloadWebsiteAsync(site));
-            }
-
-            var results = await Task.WhenAll(tasks);
 
             foreach (var item in results)
             {
-                ReportWebsiteInfo(item);
+                resultsWindow.Text += $"{ item.WebsiteUrl } downloaded: { item.WebsiteData.Length } characters long.{ Environment.NewLine }";
             }
+           
         }
 
-        private void RunDownloadSync()
-        {
-            List<string> websites = PrepData();
+       
 
-            foreach (string site in websites)
-            {
-                WebsiteDataModel results = DownloadWebsite(site);
-                ReportWebsiteInfo(results);
-            }
-        }
-
-        private WebsiteDataModel DownloadWebsite(string websiteURL)
-        {
-            WebsiteDataModel output = new WebsiteDataModel();
-            WebClient client = new WebClient();
-
-            output.WebsiteUrl = websiteURL;
-            output.WebsiteData = client.DownloadString(websiteURL);
-
-            return output;
-        }
-
-        private async Task<WebsiteDataModel> DownloadWebsiteAsync(string websiteURL)
-        {
-            WebsiteDataModel output = new WebsiteDataModel();
-            WebClient client = new WebClient();
-
-            output.WebsiteUrl = websiteURL;
-            output.WebsiteData = await client.DownloadStringTaskAsync(websiteURL);
-
-            return output;
-        }
-
-        private void ReportWebsiteInfo(WebsiteDataModel data)
-        {
-            resultsWindow.Text += $"{ data.WebsiteUrl } downloaded: { data.WebsiteData.Length } characters long.{ Environment.NewLine }";
-        }
+      
     }
 }
