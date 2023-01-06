@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsLibrary", "EventsLibr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsWinFormUI", "EventsWinFormUI\EventsWinFormUI.csproj", "{F43AC517-B23D-4597-8050-5733D84D9912}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleAsyncDemo", "SimpleAsyncDemo\SimpleAsyncDemo.csproj", "{3F4F268E-370C-4BC5-8D26-DA9DB420AF8E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +137,10 @@ Global
 		{F43AC517-B23D-4597-8050-5733D84D9912}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F43AC517-B23D-4597-8050-5733D84D9912}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F43AC517-B23D-4597-8050-5733D84D9912}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F4F268E-370C-4BC5-8D26-DA9DB420AF8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F4F268E-370C-4BC5-8D26-DA9DB420AF8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F4F268E-370C-4BC5-8D26-DA9DB420AF8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F4F268E-370C-4BC5-8D26-DA9DB420AF8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
