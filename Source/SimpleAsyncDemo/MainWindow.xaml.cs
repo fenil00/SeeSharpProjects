@@ -16,12 +16,15 @@ using System.Windows.Shapes;
 namespace SimpleAsyncDemo
 {
     using System.Net;
+    using System.Threading;
 
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
+        private CancellationTokenSource cts = new CancellationTokenSource();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -31,7 +34,8 @@ namespace SimpleAsyncDemo
         {
             var watch = System.Diagnostics.Stopwatch.StartNew();
 
-            var results = DemoMethods.RunDownloadSync();
+           // var results = DemoMethods.RunDownloadSync();
+            var results = DemoMethods.RunDownloadParallelSync();
             PrintResults(results);
 
             watch.Stop();
@@ -47,8 +51,16 @@ namespace SimpleAsyncDemo
 
             var watch = System.Diagnostics.Stopwatch.StartNew();
 
-            var results = await DemoMethods.RunDownloadAsync(progress);
-            PrintResults(results);
+            try
+            {
+                var results = await DemoMethods.RunDownloadAsync(progress, this.cts.Token);
+                PrintResults(results);
+            }
+            catch (OperationCanceledException exception)
+            {
+                resultsWindow.Text += $"The async download was cancelled {Environment.NewLine}";
+            }
+           
 
             watch.Stop();
             var elapsedMs = watch.ElapsedMilliseconds;
@@ -65,8 +77,10 @@ namespace SimpleAsyncDemo
         private async void executeParallelAsync_Click(object sender, RoutedEventArgs e)
         {
             var watch = System.Diagnostics.Stopwatch.StartNew();
+            Progress<ProgressReportModel> progress = new Progress<ProgressReportModel>();
+            progress.ProgressChanged += Progress_ProgressChanged;
 
-            var results = await DemoMethods.RunDownloadParallelAsync();
+            var results = await DemoMethods.RunDownloadParallelAsyncV2(progress, this.cts.Token);
             PrintResults(results);
 
             watch.Stop();
@@ -77,7 +91,7 @@ namespace SimpleAsyncDemo
 
         private void cancelOperation_Click(object sender, RoutedEventArgs e)
         {
-
+            this.cts.Cancel();
         }
 
         private void PrintResults(List<WebsiteDataModel> results)
