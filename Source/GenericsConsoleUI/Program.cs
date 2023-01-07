@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace GenericsConsoleUI
 {
     using GenericsConsoleUI.Models;
+    using GenericsConsoleUI.WithGenerics;
     using GenericsConsoleUI.WithoutGenerics;
 
     class Program
@@ -28,14 +29,36 @@ namespace GenericsConsoleUI
 
             PopulateLists(people, logs);
 
-            OriginalTextFileProcessor.SaveLogs(logs,logFile);
+            /* New Code with generics*/
+            GenericTextFileProcessor.SaveToTextFile<LogEntry>(logs,logFile);
+            GenericTextFileProcessor.SaveToTextFile<Person>(people,peopleFile);
 
-            var newLogs = OriginalTextFileProcessor.LoadLogs(logFile);
+            
+            var newPeople = GenericTextFileProcessor.LoadFromTextFile<Person>(peopleFile);
+
+            foreach (var p in newPeople)
+            {
+                Console.WriteLine($"{ p.FirstName } { p.LastName } (IsAlive = { p.IsAlive })");
+            }
+
+            var newLogs = GenericTextFileProcessor.LoadFromTextFile<LogEntry>(logFile);
 
             foreach (var log in newLogs)
             {
                 Console.WriteLine($"{ log.ErrorCode } { log.Message } (Time = { log.TimeOfEvent })");
             }
+
+            /*Old code - non-generics*/
+
+            //OriginalTextFileProcessor.SaveLogs(logs,logFile);
+
+            //var newLogs = OriginalTextFileProcessor.LoadLogs(logFile);
+
+            //foreach (var log in newLogs)
+            //{
+            //    Console.WriteLine($"{ log.ErrorCode } { log.Message } (Time = { log.TimeOfEvent })");
+            //}
+
             //OriginalTextFileProcessor.SavePeople(people, peopleFile);
 
             //var newPeople = OriginalTextFileProcessor.LoadPeople(peopleFile);

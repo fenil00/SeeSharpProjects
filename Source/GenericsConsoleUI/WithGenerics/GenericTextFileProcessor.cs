@@ -8,12 +8,13 @@ namespace GenericsConsoleUI.WithGenerics
 {
     public static class GenericTextFileProcessor
     {
+        // here T has to be Class and have to have ability to empty constructor
         public static List<T> LoadFromTextFile<T>(string filePath) where T : class, new()
         {
             var lines = System.IO.File.ReadAllLines(filePath).ToList();
             List<T> output = new List<T>();
             T entry = new T();
-            var cols = entry.GetType().GetProperties();
+            var cols = entry.GetType().GetProperties(); //reflection
 
             // Checks to be sure we have at least one header row and one data row
             if (lines.Count < 2)
@@ -60,7 +61,7 @@ namespace GenericsConsoleUI.WithGenerics
             return output;
         }
 
-        public static void SaveToTextFile<T>(List<T> data, string filePath) where T : class, new()
+        public static void SaveToTextFile<T>(List<T> data, string filePath) where T : class //, new()
         {
             List<string> lines = new List<string>();
             StringBuilder line = new StringBuilder();
