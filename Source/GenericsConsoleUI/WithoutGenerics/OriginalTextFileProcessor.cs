@@ -34,6 +34,30 @@ namespace GenericsConsoleUI.WithoutGenerics
             return output;
         }
 
+        public static List<LogEntry> LoadLogs(string filePath)
+        {
+            List<LogEntry> output = new List<LogEntry>();
+            LogEntry p;
+            var lines = System.IO.File.ReadAllLines(filePath).ToList();
+
+            // Remove the header row
+            lines.RemoveAt(0);
+
+            foreach (var line in lines)
+            {
+                var vals = line.Split(',');
+                p = new LogEntry();
+
+                p.ErrorCode = int.Parse(vals[0]);
+                p.Message =vals[1];
+                p.TimeOfEvent = DateTime.Parse(vals[2]);
+
+                output.Add(p);
+            }
+
+            return output;
+        }
+
         public static void SavePeople(List<Person> people, string filePath)
         {
             List<string> lines = new List<string>();
@@ -44,6 +68,21 @@ namespace GenericsConsoleUI.WithoutGenerics
             foreach (var p in people)
             {
                 lines.Add($"{ p.FirstName },{ p.IsAlive },{ p.LastName }");
+            }
+
+            System.IO.File.WriteAllLines(filePath, lines);
+        }
+
+        public static void SaveLogs(List<LogEntry> logs, string filePath)
+        {
+            List<string> lines = new List<string>();
+
+            // Add a header row
+            lines.Add("ErrorCode,Message,TimeOfEvent");
+
+            foreach (var log in logs)
+            {
+                lines.Add($"{ log.ErrorCode },{ log.Message },{ log.TimeOfEvent }");
             }
 
             System.IO.File.WriteAllLines(filePath, lines);

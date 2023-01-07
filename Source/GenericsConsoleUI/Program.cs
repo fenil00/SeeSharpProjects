@@ -28,14 +28,22 @@ namespace GenericsConsoleUI
 
             PopulateLists(people, logs);
 
-            OriginalTextFileProcessor.SavePeople(people, peopleFile);
+            OriginalTextFileProcessor.SaveLogs(logs,logFile);
 
-            var newPeople = OriginalTextFileProcessor.LoadPeople(peopleFile);
+            var newLogs = OriginalTextFileProcessor.LoadLogs(logFile);
 
-            foreach (var p in newPeople)
+            foreach (var log in newLogs)
             {
-                Console.WriteLine($"{ p.FirstName } { p.LastName } (IsAlive = { p.IsAlive })");
+                Console.WriteLine($"{ log.ErrorCode } { log.Message } (Time = { log.TimeOfEvent })");
             }
+            //OriginalTextFileProcessor.SavePeople(people, peopleFile);
+
+            //var newPeople = OriginalTextFileProcessor.LoadPeople(peopleFile);
+
+            //foreach (var p in newPeople)
+            //{
+            //    Console.WriteLine($"{ p.FirstName } { p.LastName } (IsAlive = { p.IsAlive })");
+            //}
         }
 
         private static void PopulateLists(List<Person> people, List<LogEntry> logs)
