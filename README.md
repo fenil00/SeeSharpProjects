@@ -5,6 +5,8 @@
   - [Abstract Classes](#abstract-classes)
   - [Interfaces](#interfaces)
   - [Delegates](#delegates)
+  - [Events](#events)
+  - [AsyncAwait](#asyncawait)
   - [S in SOLID](#s-in-solid)
   - [O in SOLID](#o-in-solid)
   - [L in SOLID](#l-in-solid)
@@ -16,6 +18,10 @@
 ## Interfaces ##
 
 ## Delegates ##
+
+## Events ##
+
+## AsyncAwait ##
 
 ## S in SOLID ##
 
