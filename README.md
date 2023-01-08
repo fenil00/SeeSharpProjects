@@ -3,12 +3,13 @@
 
 - [SeeSharpProjects](#SeeSharpProjects)
   - [Abstract Classes](#abstract-classes)
-  - [ZSH Terminal](#zsh-terminal)
+  - [Interfaces](#interfaces)
+  - [Delegates](#delegates)
 
 ## Abstract Classes ##
-* `/opt` -> the installation of add-on application software packages (Homebrew etc..)
+* 
 
-## ZSH Terminal ##
+## Delegates ##
 
 
     
