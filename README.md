@@ -7,6 +7,9 @@
   - [Delegates](#delegates)
   - [S in SOLID](#s-in-solid)
   - [O in SOLID](#o-in-solid)
+  - [L in SOLID](#l-in-solid)
+  - [I in SOLID](#i-in-solid)
+  - [D in SOLID](#d-in-solid)
 
 ## Abstract Classes ##
 
@@ -17,5 +20,11 @@
 ## S in SOLID ##
 
 ## O in SOLID ##
+
+## L in SOLID ##
+
+## I in SOLID ##
+
+## D in SOLID ##
 
     
