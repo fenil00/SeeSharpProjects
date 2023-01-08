@@ -1,11 +1,5 @@
 # SeeSharpProjects
-C# Concept practises 
-
-
-# software-and-tool
-> List of my Softwares and Tools as well commands, How to install, update and upgrade them
-> It is also Node.js webapp starter template 
-
+> C# Concept practises 
 
 - [SeeSharpProjects](#SeeSharpProjects)
   - [MacBook Air with M1](#macbook-air-with-m1)
