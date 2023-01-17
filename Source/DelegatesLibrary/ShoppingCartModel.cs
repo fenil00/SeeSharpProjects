@@ -21,7 +21,9 @@ namespace DelegatesLibrary
 
             mentionSubtotal(subTotal);
 
-            tellUserWeAreDiscounting("We are applying your discount.");
+            // Below both are okay.
+            // tellUserWeAreDiscounting("We are applying your discount.");
+            tellUserWeAreDiscounting?.Invoke("We are applying your discount.");
 
             return calulateDiscountedTotal(Items, subTotal);
             
