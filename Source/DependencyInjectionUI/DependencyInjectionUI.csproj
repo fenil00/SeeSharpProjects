@@ -45,7 +45,11 @@
   <ItemGroup>
     <Compile Include="Application.cs" />
     <Compile Include="ContainerConfig.cs" />
+    <Compile Include="ContainerConfigMicrosoft.cs" />
+    <Compile Include="ContainerConfigTE.cs" />
+    <Compile Include="DIServiceProvider.cs" />
     <Compile Include="IApplication.cs" />
+    <Compile Include="IDIServiceProvider.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

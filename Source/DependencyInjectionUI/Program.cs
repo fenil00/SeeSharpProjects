@@ -21,7 +21,9 @@ namespace DependencyInjectionUI
 
             // BussinessLogic bussinessLogic = new BussinessLogic();
             // bussinessLogic.ProcessData();
-
+            Console.WriteLine();
+            Console.WriteLine("DI way 1");
+            Console.WriteLine();
             var container = ContainerConfig.Configure();
 
             // new scope for instances being passed out. 
@@ -35,6 +37,22 @@ namespace DependencyInjectionUI
 
                 app.Run();
             }
+
+            Console.WriteLine();
+            Console.WriteLine("DI way 2");
+            Console.WriteLine();
+
+            // Dependency Injection with IServiceProvider and IServiceContainer
+            var con = ContainerConfigMicrosoft.Configure();
+            var appService = con.GetService(typeof(IApplication));
+            ((Application)appService).Run();
+
+            Console.WriteLine();
+            Console.WriteLine("DI way 3");
+            Console.WriteLine();
+            var diContainer = ContainerConfigTE.Configure();
+            var a = diContainer.GetService<IApplication>();
+            a.Run();
 
             Console.ReadLine();
         }
