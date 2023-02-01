@@ -37,6 +37,8 @@
 * If S is a subtype of T then object of type T maybe replaced with object of Type S without breaking the program. 
 
 ## I in SOLID ##
+* Interface Segregation Principle (The I in SOLID)
+* Client should not be depend on Interfaces they don't use.
 
 ## D in SOLID ##
 * Dependency Inversion 
