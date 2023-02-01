@@ -39,5 +39,6 @@
 ## I in SOLID ##
 
 ## D in SOLID ##
-
+* Dependency Inversion 
+* Top level Object is going to control all the dependencies.
     
