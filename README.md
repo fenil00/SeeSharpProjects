@@ -33,6 +33,8 @@
 * If Code is working don't modify and introduce new bugs 
 
 ## L in SOLID ##
+* Liskov Substitution Principle (The L in SOLID)
+* If S is a subtype of T then object of type T maybe replaced with object of Type S without breaking the program. 
 
 ## I in SOLID ##
 
