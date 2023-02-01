@@ -28,6 +28,9 @@
 * There should be only one reason to change the class.
 
 ## O in SOLID ##
+* Open Closed Principle 
+* Closed for modification but open for extension
+* If Code is working don't modify and introduce new bugs 
 
 ## L in SOLID ##
 
