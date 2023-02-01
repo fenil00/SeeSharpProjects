@@ -24,6 +24,8 @@
 ## AsyncAwait ##
 
 ## S in SOLID ##
+* Single Responsibility Principle (The S in SOLID)
+* There should be only one reason to change the class.
 
 ## O in SOLID ##
 
